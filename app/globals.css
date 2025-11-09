@@ -2,9 +2,17 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  
 }
 
+ .my-background-div {
+      background-image: url('/HeroImg.jpg');
+      background-size: cover; 
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh; 
+      width: 100%;
+    }
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -14,7 +22,6 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
